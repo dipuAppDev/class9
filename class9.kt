@@ -1,89 +1,75 @@
-/**
- * while loop
- */
-fun main(args:Array<String>){
-    /*  var i = 0
-      while (i<10){
-          println(i)
-          i++
-      }*/
-
-    /**
-     * add natural number (0-9)
-     */
-//    var i = 0
-//    var sum = 0
-//    while (i<10){
-//        sum+=i // sum = sum+i // sum=0+0->sum=0+1->sum=1+2.....
-//        i++
-//    }
-//    println(sum)
-
-//    var i = 9
-//    var sum = 0
-//    while (i>0){ // while(i>-1)
-//       sum+=i // sum = sum+i // sum=0+0->sum=0+1->sum=1+2.....
-//       i--
-//    }
-//    println(sum)
-
-    /**
-     * do-while loop
-     */
-//    var i = 0
-//    var sum = 0
-//    do{
-//        sum=sum+i
-//        i++
-//    }while(i<10)
-//        println(sum)
-
+fun main(args: Array<String>) {
     /**
      * for loop
      */
-
-//    var sum = 0
-//    for (i in 0..9){
-//        sum+=i
+//    for(i in 10 downTo 1 step 2){
+//        println(i)
 //    }
-//    println(sum)
 
     /**
-     * class work (print even number from 1-20)
+     * when expression practice
      */
-//    print("Even numbers from 1-20 is = ")
-//    for(i in 1..20){ //range number from 1-20
-//        if (i%2==0){
-//            //print("Even number is from = ")
-//            print("${i} ")
+    //program-1
+//    var a:Int = readLine()!!.toInt()
+//    var b:Int = readLine()!!.toInt()
+//    var operator = readLine()
+//    var result = when(operator){
+//        "+" -> {
+//            a+b
+//        }
+//        "-" -> {
+//            a-b
+//        }
+//        "*" -> {
+//            a*b
+//        }
+//        "/" -> {
+//            a/b
+//        }
+//        "%" -> {
+//            a%b
+//        }
+//        else -> {
+//            "$operator is not valid"
 //        }
 //    }
+//    println("Result is = $result")
+
+
     /**
-     * break statement
+     * class-work//problem-1//swapping program
      */
-//    for (i in 1..20){
-//        //println(i) // right
-//        if (i==5){
-//            break
-//        }
-//        //println(i)->error
-//
-//    }
+//    var a = 10
+//    var b = 12
+//    var temp=a
+//    a=b
+//    b=temp
+//    println("a = $a and b = $b")
+
     /**
-     * continue statement
+     * Normal factorial program
      */
-
-
-//    for (i in 1..20){
-//        //println(i)->error
-//        if (i==5){
-//            continue
-//        }
-//        println(i) // right
+//    print("Enter a number : ")
+//    var n = readLine()!!.toLong()
+//    var fact: Long = 1
+//    for (i in 1..n) {
+//        fact *= i
 //    }
+//    println("Factorial is : $fact")
 
+    /**
+     * fibonacci series program
+     */
+    var n = 20
+    var a = 0
+    var b = 1
 
+    for (i in 1..n) { // i=1->2
+        print("$a ")//0//1
+        var next = a + b//0+1=1//1+1=2
+        a = b//1>1
+        b = next//1->2
 
-
+    }
 
 }
